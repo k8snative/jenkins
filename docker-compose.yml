@@ -9,7 +9,6 @@ services:
       - "8080:8080"
     volumes:
       - "jenkins_docker:/var/jenkins_home"
-      - "./known_hosts:/var/jenkins_home/.ssh/known_hosts"
       - "./id_rsa:/var/jenkins_home/.ssh/id_rsa"
       - "./id_rsa.pub:/var/jenkins_home/.ssh/id_rsa.pub"
     environment:
